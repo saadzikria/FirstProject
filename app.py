@@ -21,7 +21,6 @@ def get_counter_from_cache():
             if retries == 0:
                 return "ERROR in Redis"
             retries = retries - 1
-            print("retries")
 
 # Create Home Route
 @app.get("/")
